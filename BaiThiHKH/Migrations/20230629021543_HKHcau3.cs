@@ -17,7 +17,8 @@ namespace BaiThiHKH.Migrations
                     PersonID = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     PersonName = table.Column<string>(type: "TEXT", nullable: true),
-                    PersonNumber = table.Column<string>(type: "TEXT", nullable: true)
+                    PersonNumber = table.Column<string>(type: "TEXT", nullable: true),
+                    PersonAddress = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {

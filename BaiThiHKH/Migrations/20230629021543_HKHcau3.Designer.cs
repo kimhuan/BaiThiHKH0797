@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BaiThiHKH.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230629020735_HKHcau3")]
+    [Migration("20230629021543_HKHcau3")]
     partial class HKHcau3
     {
         /// <inheritdoc />
@@ -25,6 +25,9 @@ namespace BaiThiHKH.Migrations
                     b.Property<int?>("PersonID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("PersonAddress")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("PersonName")
                         .HasColumnType("TEXT");

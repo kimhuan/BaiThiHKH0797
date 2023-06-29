@@ -56,7 +56,7 @@ namespace BaiThiHKH.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PersonID,PersonName,PersonNumber")] HKHcau3 hKHcau3)
+        public async Task<IActionResult> Create([Bind("PersonID,PersonName,PersonNumber,PersonAddress")] HKHcau3 hKHcau3)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace BaiThiHKH.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int? id, [Bind("PersonID,PersonName,PersonNumber")] HKHcau3 hKHcau3)
+        public async Task<IActionResult> Edit(int? id, [Bind("PersonID,PersonName,PersonNumber,PersonAddress")] HKHcau3 hKHcau3)
         {
             if (id != hKHcau3.PersonID)
             {

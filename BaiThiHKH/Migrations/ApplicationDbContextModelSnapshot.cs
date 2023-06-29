@@ -23,6 +23,9 @@ namespace BaiThiHKH.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("PersonAddress")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("PersonName")
                         .HasColumnType("TEXT");
 

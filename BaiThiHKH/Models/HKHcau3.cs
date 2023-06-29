@@ -12,6 +12,9 @@ namespace BaiThiHKH.Models
         public string? PersonName { get; set; }
         
         [Display (Name = "Điện thoại liên hệ")]
-        public string? PersonNumber { get; set; }     
+        public string? PersonNumber { get; set; }  
+
+        [Display (Name = "Địa chỉ")]
+        public string? PersonAddress { get; set; }   
     }
 }
